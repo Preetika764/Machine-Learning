@@ -1,12 +1,10 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import style
 import pandas as pd
 from sklearn import svm
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn import preprocessing
-from sklearn.linear_model import LinearRegression
+
 
 def normalize(df):
     result = df.copy()
@@ -40,7 +38,7 @@ print("5")
 
 y = df[['Hazardous']]
 
-print(8)
+#print(8)
 
 df = normalize(df)
 
@@ -58,8 +56,6 @@ X = df[['Absolute Magnitude', 'Est Dia in KM(min)', 'Est Dia in KM(max)',
 #print(df['Hazardous'].value_counts())
 
 #print(y[0:5])
-
-#print(df.corr()['Hazardous'])
 
 #df.info()
 
